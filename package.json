@@ -1,8 +1,9 @@
 {
   "name": "react-skeleton-preview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "type-check": "tsc --noEmit",
@@ -39,7 +40,8 @@
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.0",
     "typescript": "^5.8.3",
-    "vite": "^6.3.2"
+    "vite": "^6.3.2",
+    "vite-plugin-dts": "^4.5.3"
   },
   "files": [
     "dist",

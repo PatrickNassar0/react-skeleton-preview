@@ -1,13 +1,22 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import dts from 'vite-plugin-dts'
+import path from 'path'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    dts({
+      insertTypesEntry: true,
+      outDir: 'dist',
+    }),
+  ],
   build: {
     lib: {
-      entry: 'src/index.ts',
-      name: 'index',
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: 'React-Skeleton-Preview',
       fileName: (format) => `index.${format}.js`,
+      formats: ['es', 'umd'],
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
@@ -18,5 +27,7 @@ export default defineConfig({
         },
       },
     },
+    outDir: 'dist',
+    emptyOutDir: true,
   },
-});
+})
