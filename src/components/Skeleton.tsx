@@ -35,7 +35,7 @@ export function Skeleton({
   // Memoize styles for performance
   const skeletonStyle: React.CSSProperties = React.useMemo(() => ({
     width,
-    height,
+    height: variant === 'text' ? '1em' : height,
     backgroundColor,
     borderRadius: variant === 'circular' ? '50%' : borderRadius,
     animation: pulse ? `pulse ${animationDuration} infinite` : undefined,
