@@ -2,8 +2,9 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
+    "types": ["node"],
     "declaration": true,
-    "declarationDir": "dist/types",
+    "emitDeclarationOnly": true,
     "outDir": "dist",
     "jsx": "react-jsx",
     "moduleResolution": "node",
@@ -11,5 +12,6 @@
     "skipLibCheck": true,
     "strict": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

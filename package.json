@@ -1,25 +1,35 @@
 {
   "name": "react-skeleton-preview",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite",
-    "preview": "vite preview"
+    "type-check": "tsc --noEmit",
+    "build:types": "tsc",
+    "build:lib": "vite build",
+    "build": "npm run build:types && npm run build:lib"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PatrickNassar0/react-skeleton-preview.git"
   },
-  "keywords": ["skeleton", "react", "preview", "loading", "placeholder"],
+  "keywords": [
+    "skeleton",
+    "react",
+    "react-skeleton",
+    "preview",
+    "loading",
+    "placeholder",
+    "skeleton-loader"
+  ],
   "author": "Patrick Nassar",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/PatrickNassar0/react-skeleton-preview/issues"
   },
   "homepage": "https://github.com/PatrickNassar0/react-skeleton-preview#readme",
-  "description": "",
+  "description": "A flexible and customizable Skeleton loading component for React. Use it to display a placeholder while content is loading — with support for rectangular, circular, and text-shaped skeletons.",
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
@@ -30,5 +40,9 @@
     "@vitejs/plugin-react": "^4.4.0",
     "typescript": "^5.8.3",
     "vite": "^6.3.2"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }
