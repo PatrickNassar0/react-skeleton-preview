@@ -6,8 +6,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'MyReactComponents',
-      fileName: (format) => `my-react-components.${format}.js`,
+      name: 'react-skeleton-preview',
+      fileName: (format) => `react-skeleton-preview.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
