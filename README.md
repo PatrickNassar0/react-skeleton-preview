@@ -1,4 +1,4 @@
-# 🦴 React Skeleton Component
+# 🦴 react-skeleton-preview
 
 A flexible and customizable `Skeleton` loading component for React. Use it to display a placeholder while content is loading — with support for rectangular, circular, and text-shaped skeletons.
 
@@ -19,14 +19,14 @@ A flexible and customizable `Skeleton` loading component for React. Use it to di
 If you're packaging this as an npm module, update this section accordingly. For now, you can use it locally:
 
 ```bash
-npm install your-skeleton-component
+npm install react-skeleton-preview
 ```
 
 ---
 
 ## 🚀 Usage
 ```
-import { Skeleton } from 'your-skeleton-component'
+import { Skeleton } from 'react-skeleton-preview'
 ```
 
 ```
