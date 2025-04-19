@@ -1,0 +1,30 @@
+{
+  "name": "react-skeleton-preview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickNassar0/react-skeleton-preview.git"
+  },
+  "keywords": ["skeleton", "react", "preview", "loading", "placeholder"],
+  "author": "Patrick Nassar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PatrickNassar0/react-skeleton-preview/issues"
+  },
+  "homepage": "https://github.com/PatrickNassar0/react-skeleton-preview#readme",
+  "description": "",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.2"
+  }
+}
